@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/* ========================================================
+	form.css => 会員登録用CSS
+======================================================== */
+
+/* form_wrap
+============================================================================================================ */
+.form_wrap {
+}
+.form_wrap input.size_name {
+	width: 170px;
+}
+.form_wrap .shop_select select {
+	width: 100%;
+}
+.form_wrap .shop_select div + div {
+	margin-top: 20px;
+}
+.form_wrap .birth .ex {
+	position: relative;
+	padding-left: 1.1em;
+	margin-top: 10px;
+	line-height: 1.5;
+}
+.form_wrap .birth .ex > span {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.form_wrap .agree {
+	margin: 50px 0 30px;
+	text-align: center;
+}
+.form_wrap .agree .box {
+	overflow: auto;
+	height: 200px;
+	margin: 20px 0 30px;
+	padding: 20px 30px;
+	border: 1px solid #e8ecf5;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.form_wrap .agree .box h1 {
+	margin-bottom: 15px;
+	font-size: 1.6rem;
+	color: #000;
+}
+.form_wrap .agree #agreement {
+	text-align: left;
+}
+.form_wrap .agree label {
+	display: inline-block;
+	font-weight: bold;
+}
+.form_wrap .agree .hissu {
+	display: inline-block;
+	margin-left: 20px;
+	padding: 0 5px;
+	background-color: #dce600;
+	color: #3e5faa;
+	font-size: 12px;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+
+@media screen and (min-width: 681px), print {
+	.form_wrap .kana {
+		display: inline-block;
+		margin-left: 15px;
+	}
+	.form_wrap .kana input {
+		margin-left: 5px;
+	}
+	.form_wrap .seimei {
+		display: inline-block;
+	}
+	.form_wrap .seimei + .seimei {
+		margin-left: 15px;
+	}
+	.form_wrap .seimei input {
+		margin-left: 5px;
+	}
+	.form_wrap .birth select ~ select {
+		margin-left: 10px;
+	}
+	.form_wrap .btn form {
+		display: inline-block;
+	}
+}
+@media screen and (max-width: 680px) {
+	.form_wrap input.size_name {
+		width: 100%;
+	}
+	.form_wrap .kana {
+		margin-top: 10px;
+	}
+	.form_wrap .seimei_wrap {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+	.form_wrap .seimei_wrap .seimei {
+		width: 48%;
+	}
+	.form_wrap .shop_select div + div {
+		margin-top: 10px;
+	}
+
+
+	.form_wrap .agree {
+		margin: 30px 10px 30px;
+	}
+	.form_wrap .agree .box {
+		padding: 20px 10px;
+	}
+	.form_wrap .agree .box h1 {
+		margin-bottom: 5px;
+		font-size: 1.4rem;
+	}
+}
+

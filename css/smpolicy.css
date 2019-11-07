@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* ========================================================
+	smpolicy.css => ソーシャルメディアポリシーページ用CSS
+======================================================== */
+
+/* topicpath
+============================================================================================================ */
+.topicpath {
+	margin-bottom:0;
+}
+
+/* in_box
+============================================================================================================ */
+.in_box {
+	border:7px solid #e8ecf5;
+	background-color:#fff;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+@media screen and (max-width:680px) {
+	.in_box {
+		border-width:4px;
+	}
+}
+
+/* smpolicy_content
+============================================================================================================ */
+.smpolicy_content {
+	padding:60px 0 40px;
+}
+.smpolicy_content .in_box {
+	padding:;
+}
+.smpolicy_content .in_box {
+	padding:50px 130px;
+}
+.smpolicy_content .in_box > ul > li {
+	padding-bottom:10px;
+}
+.smpolicy_content .in_box > ul > li + li {
+	border-top:1px solid #e8ecf5;
+	padding-top:10px;
+}
+.smpolicy_content .in_box ul li dl dt,
+.smpolicy_content .in_box > ul > li > p {
+	text-indent:-1.4em;
+	padding-left:1.4em;
+	font-weight:bold;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.smpolicy_content .in_box ul li dl dt:before,
+.smpolicy_content .in_box > ul > li > p:before {
+	content:"";
+	display:inline-block;
+	margin-right:0.4em;
+	border-radius:50%;
+	width:12px;
+	height:12px;
+	background-color:#3e5faa;
+}
+.smpolicy_content .in_box > .contact {
+	text-align:right;
+}
+@media screen and (max-width:680px) {
+	.smpolicy_content {
+		padding:30px 0 50px;
+	}
+	.smpolicy_content .in_box {
+		padding:20px 10px;
+	}
+}
+
+
+/* li_points
+============================================================================================================ */
+.li_points {
+	margin-top:10px;
+	padding-left:20px;
+}
+.li_points li {
+	text-indent:-0.8em;
+	padding-left:0.8em;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.li_points li:before {
+	content:"";
+	display:inline-block;
+	margin-right:0.4em;
+	border-radius:50%;
+	width:3px;
+	height:3px;
+	background-color:#212121;
+	vertical-align:15%;
+}
+
+/* anno
+============================================================================================================ */
+.li_anno li {
+	text-indent:-1em;
+	padding-left:1em;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.li_anno li:before {
+	content:"※";
+}

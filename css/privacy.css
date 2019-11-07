@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/* ========================================================
+	faq.css => よくある質問ページ用CSS
+======================================================== */
+
+/* topicpath
+============================================================================================================ */
+.topicpath {
+	margin-bottom:0;
+}
+
+/* center
+============================================================================================================ */
+.center {
+	text-align:center;
+	margin-bottom:35px;
+}
+@media screen and (max-width:680px) {
+	.center {
+		text-align:left;
+		margin-bottom:20px;
+	}
+}
+/* in_box
+============================================================================================================ */
+.in_box {
+	border:7px solid #e8ecf5;
+	background-color:#fff;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+@media screen and (max-width:680px) {
+	.in_box {
+		border-width:4px;
+	}
+}
+
+
+/* privacy_content
+============================================================================================================ */
+.privacy_content {
+	padding:60px 0 40px;
+}
+.privacy_content .in_box {
+	padding:;
+}
+.privacy_content .in_box {
+	padding:50px 130px;
+}
+.privacy_content .in_box:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+.privacy_content .in_box > ul > li {
+	padding-bottom:10px;
+}
+.privacy_content .in_box > ul > li + li {
+	border-top:1px solid #e8ecf5;
+	padding-top:10px;
+}
+.privacy_content .in_box ul li dl dt,
+.privacy_content .in_box > ul > li > p {
+	text-indent:-1.4em;
+	padding-left:1.4em;
+	font-weight:bold;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.privacy_content .in_box ul li dl dt:before,
+.privacy_content .in_box > ul > li > p:before {
+	content:"";
+	display:inline-block;
+	margin-right:0.4em;
+	border-radius:50%;
+	width:12px;
+	height:12px;
+	background-color:#3e5faa;
+}
+.privacy_content .in_box > .signature {
+	text-align:right;
+}
+.privacy_content .in_box > .signature dd {
+	font-size:18px;
+	font-size:1.8rem;
+}
+@media screen and (max-width:680px) {
+	.privacy_content {
+		padding:30px 0 50px;
+	}
+	.privacy_content .in_box {
+		padding:20px 10px;
+	}
+}
+
+/* num */
+.privacy_content .in_box .num {
+	counter-reset:num;
+}
+.privacy_content .in_box .num li {
+	text-indent:-1.2em;
+	padding-left:1.2em;
+	border-top:0;
+}
+.privacy_content .in_box .num li:before {
+	margin-right:5px;
+	counter-increment:num;
+	content:counter(num)".";
+}
+
+.date {
+	text-align:right;
+}
+.company {
+	margin-top:20px;
+	float:right;
+}
+.company dt {
+	font-weight:bold;
+}

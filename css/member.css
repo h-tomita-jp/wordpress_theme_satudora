@@ -1,0 +1,525 @@
+@charset "utf-8";
+
+/* ========================================================
+	member.css => サツドラ会員用CSS
+======================================================== */
+
+/* タイトル
+============================================================================================================ */
+/* page_title */
+.page_title {
+	background-image: url(../img/member_title_ico.png);
+}
+
+/* memberContents
+============================================================================================================ */
+#memberContents {
+
+}
+#memberContents > header {
+	position: relative;
+	padding: 65px 0;
+	background-color: #4c6ab0;
+	color: #fff;
+	z-index: 2;
+}
+#memberContents > header::after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	background-color: #4c6ab0;
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+#memberContents > header h1 {
+	margin: 0;
+	color: #fff;
+}
+@media screen and (min-width: 681px), print {
+	#memberContents > header h1 span:before,
+	#memberContents > header h1 span:after {
+		width: 120px;
+		background-image: url(../img/title_dot_line_w.png);
+	}
+}
+@media screen and (max-width: 680px) {
+	#memberContents > header {
+		padding: 35px 0;
+	}
+	#memberContents > header h1 {
+		font-size: 2.3rem;
+	}
+	#memberContents > header h1 span:before,
+	#memberContents > header h1 span:after {
+		content: none;
+	}
+	#memberContents > header h1 span {
+		padding: 0;
+	}
+}
+
+#memberContents .member_bnr {
+	padding: 40px 0;
+}
+#memberContents .member_bnr a {
+	display: block;
+	height: 130px;
+	padding-top: 24px;
+	background-color: #fff;
+	text-decoration: none;
+	color: #212121;
+	border-radius: 5px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 2.2rem;
+	line-height: 1.3;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+#memberContents .member_bnr a span {
+	display: block;
+	margin-bottom: 5px;
+}
+@media screen and (min-width: 681px), print {
+	#memberContents .member_bnr li {
+		width: 500px;
+		float: left;
+	}
+	#memberContents .member_bnr li + li {
+		float: right;
+	}
+	#memberContents .member_bnr a:hover {
+		background-color: #f8facc;
+	}
+}
+@media screen and (max-width: 680px) {
+	#memberContents .member_bnr {
+		padding: 25px 0;
+	}
+	#memberContents .member_bnr li + li {
+		margin-top: 15px;
+	}
+	#memberContents .member_bnr a {
+		height: 80px;
+		padding-top: 8px;
+		border-radius: 3px;
+		font-size: 1.6rem;
+	}
+	#memberContents .member_bnr a span {
+		margin-bottom: 3px;
+	}
+	#memberContents .member_bnr a span img {
+		width: 40px;
+	}
+}
+
+
+#memberContents .member_nav {
+	background-color: #dce600;
+}
+#memberContents .member_nav ul a {
+	display: block;
+	color: #203463;
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+@media screen and (min-width: 681px), print {
+	#memberContents .member_nav ul {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		padding: 20px 0;
+	}
+	#memberContents .member_nav ul li {
+		position: relative;
+		padding: 0 30px;
+	}
+	#memberContents .member_nav ul li + li:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		border-left: 1px solid #a6aec1;
+	}
+}
+@media screen and (max-width: 680px) {
+	#memberContents .member_nav ul li + li {
+		border-top: 1px solid #a6aec1;
+	}
+	#memberContents .member_nav ul a {
+		position: relative;
+		text-align: center;
+		padding: 12px;
+		font-size: 1.3rem;
+		font-weight: bold;
+	}
+	#memberContents .member_nav ul a:after {
+		content: "";
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		width: 6px;
+		height: 6px;
+		margin-top: -4px;
+		border-right: 2px solid;
+		border-top: 2px solid;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+}
+
+
+
+
+
+
+#memberContents .entry_btn {
+	margin-top: 50px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+#memberContents .entry_btn p + p {
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+#memberContents .entry_btn p + p a {
+	color: #000;
+}
+@media screen and (max-width: 680px) {
+	#memberContents .entry_btn {
+		margin-top: 30px;
+		padding-bottom: 40px;
+	}
+	#memberContents .entry_btn p + p {
+		margin-top: 20px;
+		font-size: 1.3rem;
+	}
+}
+
+
+
+
+#memberContents .box_contents {
+	padding: 70px 0 100px;
+}
+#memberContents .box_contents > * {
+	padding: 50px 130px 60px;
+	background-color: #fff;
+	border: 7px solid #e8ecf5;
+	border-radius: 2px;
+	font-size: 1.4rem;
+	color: #424242;
+}
+@media screen and (max-width: 680px) {
+	#memberContents .box_contents {
+		padding: 35px 10px 50px;
+	}
+	#memberContents .box_contents > * {
+		padding: 20px 15px 30px;
+		border-width: 4px;
+		border-radius: 1px;
+		font-size: 1.3rem;
+	}
+}
+#memberContents .para_section > * + * {
+	margin-top: 1.8em;
+}
+#memberContents .bdb_title {
+	margin-top: 3em;
+	padding-bottom: 5px;
+	font-size: 1.5rem;
+	color: #000;
+	border-bottom: 1px solid #d9d9d9;
+}
+#memberContents .bdb_title + * {
+	margin-top: 15px;
+}
+#memberContents .a_link {
+	position: relative;
+	padding-left: 14px;
+	color: #000;
+}
+#memberContents .a_link::before {
+	content: "";
+	position: absolute;
+	top: 0.4em;
+	left: 0;
+	width: 5px;
+	height: 5px;
+	border-top: 1px solid #3e5faa;
+	border-right: 1px solid #3e5faa;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.dot_li > li {
+	position: relative;
+	padding-left: 1em;
+}
+.dot_li > li::before {
+	content: "・";
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.parentheses_li > li {
+	position: relative;
+	padding-left: 2.2em;
+}
+.parentheses_li > li > span:first-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.num_li {
+	margin-left: 1.8em;
+	list-style: decimal;
+}
+
+
+/* ========================================================
+	index.css => 会員特典用CSS
+======================================================== */
+
+/* privilege_sec
+============================================================================================================ */
+.privilege_sec {
+	padding: 50px 0 80px;
+}
+.privilege_sec header {
+	position: relative;
+	margin-bottom: 50px;
+	text-align: center;
+	z-index: 3;
+}
+.privilege_sec header .privilege {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 0 10px;
+	font-size: 1.35rem;
+	line-height: 1.3;
+	font-weight: bold;
+	color: #3e5faa;
+}
+.privilege_sec header .privilege::before,
+.privilege_sec header .privilege::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 2px;
+	border-left: 2px solid #dce600;
+}
+.privilege_sec header .privilege::before {
+	left: 0;
+	-webkit-transform: rotate(-19deg);
+	-ms-transform: rotate(-19deg);
+	-o-transform: rotate(-19deg);
+	transform: rotate(-19deg);
+}
+.privilege_sec header .privilege::after {
+	right: 0;
+	-webkit-transform: rotate(15deg);
+	-ms-transform: rotate(15deg);
+	-o-transform: rotate(15deg);
+	transform: rotate(15deg);
+}
+.privilege_sec header .num {
+	position: relative;
+	display: block;
+	width: 58px;
+	height: 58px;
+	margin: 0 auto 25px;
+	padding-top: 14px;
+	background-color: #3e5faa;
+	border-radius: 3px;
+	font-size: 3.2rem;
+	line-height: 1;
+	color: #fff;
+	font-weight: bold;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.privilege_sec header .num::after {
+	content: "";
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	width: 12px;
+	height: 12px;
+	background-color: #3e5faa;
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	-webkit-transform: scaleX(.6) rotate(-45deg);
+	-ms-transform: scaleX(.6) rotate(-45deg);
+	-o-transform: scaleX(.6) rotate(-45deg);
+	transform: scaleX(.6) rotate(-45deg);
+}
+.privilege_sec header h1 {
+	display: inline-block;
+	font-size: 2.7rem;
+	line-height: 1.3;
+	color: #23389e;
+}
+.privilege_sec header h1 > span {
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #3b5aa1;
+	vertical-align: top;
+}
+.privilege_sec .content {
+	position: relative;
+	font-size: 1.4rem;
+	color: #424242;
+}
+.privilege_sec .content .lead {
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 1.8rem;
+	line-height: 1.6;
+	color: #000;
+}
+.privilege_sec .content .lead .s {
+	display: block;
+	font-weight: normal;
+	font-size: 1.2rem;
+}
+
+.privilege_sec.sec03 {
+	background-color: #fbfde5;
+}
+
+@media screen and (min-width: 681px), print {
+	.privilege_sec .content {
+		margin: 0 60px;
+		padding-right: 360px;
+	}
+	.privilege_sec .content .img {
+		position: absolute;
+	}
+	.privilege_sec.sec01 .content .img {
+		right: 0;
+		top: -70px;
+	}
+	.privilege_sec.sec02 .content .img {
+		right: 0;
+		top: -30px;
+	}
+	.privilege_sec.sec03 .content .img {
+		right: 80px;
+		top: -50px;
+	}
+}
+@media screen and (max-width: 680px) {
+	.privilege_sec {
+		padding: 30px 0;
+	}
+	.privilege_sec header {
+		margin-bottom: 10px;
+	}
+	.privilege_sec header .privilege {
+		font-size: 1.1rem;
+	}
+	.privilege_sec header .num {
+		width: 48px;
+		height: 48px;
+		margin-bottom: 20px;
+		padding-top: 10px;
+		font-size: 2.7rem;
+	}
+	.privilege_sec header h1 {
+		font-size: 1.9rem;
+	}
+	.privilege_sec header h1 > span {
+		margin-bottom: 10px;
+		padding-bottom: 3px;
+		border-bottom-width: 2px;
+	}
+
+	.privilege_sec .content .img {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.privilege_sec.sec01 .content .img img {
+		width: 220px;
+	}
+	.privilege_sec.sec02 .content .img img {
+		width: 240px;
+	}
+	.privilege_sec.sec03 .content .img img {
+		width: 170px;
+	}
+	.privilege_sec .content {
+		font-size: 1.3rem;
+	}
+	.privilege_sec .content .lead {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	.privilege_sec .content .lead .s {
+		font-size: 1.1rem;
+	}
+}
+
+
+.privilege_info {
+}
+.privilege_info dl {
+	font-size: 1.4rem;
+	color: #424242;
+}
+.privilege_info dl dt {
+	font-size: 1.6rem;
+	color: #000;
+	font-weight: bold;
+}
+.privilege_info dl dt ~ dt {
+	margin-top: 40px;
+}
+@media screen and (min-width: 681px), print {
+	.privilege_info dl {
+		padding: 65px 110px;
+		border-bottom: 1px solid #ececec;
+	}
+}
+@media screen and (max-width: 680px) {
+	.privilege_info {
+		padding-top: 30px;
+	}
+	.privilege_info dl {
+		font-size: 1.3rem;
+	}
+	.privilege_info dl dt {
+		font-size: 1.4rem;
+	}
+	.privilege_info dl dt ~ dt {
+		margin-top: 1em;
+	}
+}
